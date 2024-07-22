@@ -1,3 +1,4 @@
+import streamlit as st
 pip install Kaggle
 from kaggle.api.kaggle_api_extended import KaggleApi
 
@@ -16,7 +17,7 @@ def download_dataset():
     api.dataset_download_files(dataset, path=path, unzip=True)
 
 #The dataset is now downloaded in the Streamlit environment
-import streamlit as st
+
 
 if st.sidebar.button('Get Data', type="primary"):
     download_dataset()
