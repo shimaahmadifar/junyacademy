@@ -9,7 +9,7 @@ def download_dataset():
     api.authenticate()
     
     # Define the dataset and the path where files will be downloaded
-    dataset = 'junyiacademy'
+    dataset = 'Log_Problem.csv'
     path = 'https://www.kaggle.com/datasets/junyiacademy/learning-activity-public-dataset-by-junyi-academy/data?select=Log_Problem.csv'
 
     # Download the dataset
@@ -22,4 +22,4 @@ if st.sidebar.button('Get Data', type="primary"):
     download_dataset()
 #The button will appear on a sidebar, otherwise you can use st.button
 
-data = pd.read_csv("missile_attacks_daily.csv")
+data = pd.read_csv("Log_Problem.csv")
