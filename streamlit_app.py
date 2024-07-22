@@ -1,5 +1,4 @@
 import streamlit as st
-pip install Kaggle
 from kaggle.api.kaggle_api_extended import KaggleApi
 
 def download_dataset():
